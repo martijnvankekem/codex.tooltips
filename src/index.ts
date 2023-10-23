@@ -240,6 +240,8 @@ export default class Tooltip {
 
   /**
    * Append CSS file
+   *
+   * @param {string} nonce - The nonce to apply to the injected styles.
    */
   private loadStyles(nonce?: string): void {
     const id = 'codex-tooltips-style';
