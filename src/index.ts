@@ -77,11 +77,6 @@ export default class Tooltip {
   private hidingTimeout;
 
   /**
-   * The Content-Security-Policy nonce to apply on injected styles.
-   */
-  private nonce: string;
-
-  /**
    * Module constructor
    *
    * @param {string} nonce - The nonce to apply to the injected styles.
@@ -258,7 +253,7 @@ export default class Tooltip {
 
     // Apply nonce to injected styles.
     if (nonce) {
-      tag.setAttribute("nonce", nonce);
+      tag.setAttribute('nonce', nonce);
     }
 
     /**
